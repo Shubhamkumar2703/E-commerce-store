@@ -59,7 +59,7 @@ public class DataSeeder implements CommandLineRunner {
         jacket.setName("Winter Jacket");
         jacket.setDescription("warm and cool stylish jacket for winter causal and party wear ");
         jacket.setImageUrl("https://placehold.co/600x400");
-        jacket.setPrice(199.99);
+        jacket.setPrice(24.99);
         jacket.setCategory(clothing);
 
         Product blender = new Product();
