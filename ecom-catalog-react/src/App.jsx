@@ -14,12 +14,12 @@ function App() {
 
    
    useEffect(() => {
-    fetch('http://localhost:8080/api/products')
+    fetch('http://localhost:9090/api/products')
       .then(response => response.json())
       .then(data => setProducts(data));
 
 
-    fetch('http://localhost:8080/api/categories')
+    fetch('http://localhost:9090/api/categories')
       .then(response => response.json())
       .then(data => setCategories(data));
    }, []); 

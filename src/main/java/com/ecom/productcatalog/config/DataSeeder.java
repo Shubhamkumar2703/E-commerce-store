@@ -44,7 +44,7 @@ public class DataSeeder implements CommandLineRunner {
         phone.setName("smartPhone");
         phone.setDescription("Latest model smartphone with amazing features ");
         phone.setImageUrl("https://placehold.co/600x400");
-        phone.setPrice(999.99);
+        phone.setPrice(199.99);
         phone.setCategory(electronics);
 
 
@@ -52,7 +52,7 @@ public class DataSeeder implements CommandLineRunner {
         laptop.setName("Laptop");
         laptop.setDescription("Latest model laptop ,high performance for work and play ");
         laptop.setImageUrl("https://placehold.co/600x400");
-        laptop.setPrice(9999.99);
+        laptop.setPrice(999.99);
         laptop.setCategory(electronics);
 
         Product jacket = new Product();
@@ -62,15 +62,22 @@ public class DataSeeder implements CommandLineRunner {
         jacket.setPrice(24.99);
         jacket.setCategory(clothing);
 
+        Product shoes = new Product();
+        shoes.setName("Sneakers");
+        shoes.setDescription("stylish and casual good quality sneaker");
+        shoes.setImageUrl("https://placehold.co/600x400");
+        shoes.setPrice(1.99);
+        shoes.setCategory(clothing);
+
         Product blender = new Product();
         blender.setName("Blender");
         blender.setDescription("High-speed blender for smoothies and more masaalas grinding. ");
         blender.setImageUrl("https://placehold.co/600x400");
-        blender.setPrice(299.99);
+        blender.setPrice(99.99);
         blender.setCategory(home);
 
 
-        productRepository.saveAll(Arrays.asList(phone,laptop,jacket,blender));
+        productRepository.saveAll(Arrays.asList(phone,laptop,jacket,shoes,blender));
 
 
 
